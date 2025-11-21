@@ -1,0 +1,200 @@
+/* GLOBAL PAGE STYLING */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+ /*NAVBAR*/
+
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.nav-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap:25px;
+    
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-right: 15px;
+}
+
+.nav-links li a:hover {
+    color: #ffe600;
+    transform: scale(1.1);
+}
+
+/* MAIN CONTAINER + CARD STYLING */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 28px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+}
+
+.title {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* ================================================
+   SOCIAL ICONS
+================================================ */
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    font-size: 28px;
+    color: #2575fc;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #6a11cb;
+    transform: scale(1.2);
+}
+
+/* ================================================
+   SKILLS LIST
+================================================ */
+
+.section-title {
+    color: #444;
+    margin-top: 15px;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.skills li {
+    background: #2575fc;
+    color: white;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect on skills */
+.skills li:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ================================================
+   CONTACT FORM INPUTS
+================================================ */
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Focus glow */
+form input:focus,
+form textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.4);
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* ================================================
+   BUTTON STYLE
+================================================ */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background: #6a11cb;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
